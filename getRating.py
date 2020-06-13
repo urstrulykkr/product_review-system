@@ -68,15 +68,15 @@ def main():
         ratingbase = ratingbase
     rating = (ratingbase/50)*100
     if rating > 0 and rating < 20:
-        print('** - 2 star')
+        print('2 star')
     elif rating > 20 and rating < 40:
-        print("** - 2.5 star")
+        print("2.5 star")
     elif rating > 40 and rating < 60:
-        print('*** - 3 star')
+        print('3 star')
     elif rating > 60 and rating < 80:
-        print('**** - 4 star')
+        print('4 star')
     else:
-        print('***** - 5 star')
+        print('5 star')
 
 
 if __name__ == "__main__":
