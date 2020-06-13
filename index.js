@@ -22,6 +22,6 @@ app.listen(app.get("port"), () => {
 app.get("/", (req, res) => {
 	res.render("index");
 });
-app.use((req, res, next) => {
+app.use((req, res) => {
 	res.status(404).render("404");
 });
