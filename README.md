@@ -1,4 +1,4 @@
-# product_review-system ![Python](https://github.com/urstrulykkr/product_review-system/workflows/Python/badge.svg) ![Python](https://github.com/urstrulykkr/product_review-system/workflows/Node%20CI/badge.svg)
+# product_review-system ![Python](https://github.com/urstrulykkr/product_review-system/workflows/Python/badge.svg) ![Node CI](https://github.com/urstrulykkr/product_review-system/workflows/Node%20CI/badge.svg)
 
 A Machine learning powered product review system.
 
