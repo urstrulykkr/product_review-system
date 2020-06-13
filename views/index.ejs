@@ -26,6 +26,7 @@
 								id="inputFocus"
 								type="text"
 								placeholder="Keyword"
+								onkeypress="return (getRating(event,this))"
 							/>
 							<button class="clear" id="clear">
 								<svg
@@ -40,6 +41,7 @@
 								</svg>
 							</button>
 						</div>
+						<p id="pythonOutput"></p>
 					</div>
 				</div>
 			</form>
@@ -59,7 +61,43 @@
 					inputFocus.classList.remove("isFocus");
 				}
 			});
-
+			function getRating(event, str) {
+				if (event.charCode === 13) {
+					document.getElementById(
+						"pythonOutput"
+					).innerHTML = `Please wait! Querying for ${str.value}...`;
+					fetch("/getRating", {
+						method: "POST",
+						body: new URLSearchParams(
+							encodeURIComponent("input") +
+								"=" +
+								encodeURIComponent(str.value)
+						),
+					})
+						.then((response) => {
+							if (response.status !== 200) {
+								alert(
+									"Looks like there was a problem. Status Code: " +
+										response.status
+								);
+								return;
+							}
+							if (response.status == 200) {
+								response.json().then((data) => {
+									document.getElementById(
+										"pythonOutput"
+									).innerHTML = data;
+								});
+							}
+						})
+						.catch((err) => {
+							alert("Fetch Error :-S", err);
+							document.getElementById(
+								"pythonOutput"
+							).innerHTML = `Fetch Error: ${err}`;
+						});
+				}
+			}
 		</script>
 	</body>
 </html>
