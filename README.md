@@ -2,4 +2,4 @@
 
 A Machine learning powered product review system.
 
-Run `install.sh` in Bash shell to start the app. Windows users can use Git Bash for the shell.
+Run `bash install.sh` in Bash shell to start the app. Windows users can use Git Bash for the shell.
