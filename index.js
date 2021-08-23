@@ -1,15 +1,14 @@
 const express = require("express"),
 	app = express(),
 	path = __dirname + "/views/",
-	bodyParser = require("body-parser"),
 	morgan = require("morgan"),
-	{ spawn } = require("child_process");
+	{spawn} = require("child_process");
 
 app.use(morgan("dev"));
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(
-	bodyParser.urlencoded({
-		extended: false,
+	express.urlencoded({
+		extended: false
 	})
 );
 app.set("port", 5000);
