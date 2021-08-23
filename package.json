@@ -25,5 +25,15 @@
 	"devDependencies": {
 		"eslint": "^7.32.0",
 		"eslint-config-google": "^0.14.0"
-	}
+	},
+	"private": true,
+	"engines": {
+		"node": ">=12.22.5",
+		"npm": ">=7.21.0"
+	},
+	"os": [
+    "darwin",
+    "linux",
+	"!win32"
+  ]
 }
