@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 	res.render("index");
 });
 app.post("/getRating", (req, res) => {
-	var pythonOutput;
+	let pythonOutput;
 	const python = spawn("python", ["getRating.py", req.body.input]);
 	python.stdout.on("data", (data) => {
 		pythonOutput = data.toString();
