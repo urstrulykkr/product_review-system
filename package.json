@@ -1,6 +1,6 @@
 {
 	"name": "product_review-system",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A Machine learning powered product review system.",
 	"main": "index.js",
 	"repository": {
