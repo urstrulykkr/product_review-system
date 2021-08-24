@@ -64,8 +64,6 @@ def main():
         ratingbase = (-1)*ratingbase
     elif ratingbase == 0:
         ratingbase = 12.5
-    else:
-        ratingbase = ratingbase
     rating = (ratingbase/50)*100
     if rating > 0 and rating < 20:
         print('2 star')
