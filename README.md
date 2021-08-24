@@ -1,4 +1,4 @@
-# product_review-system ![Python](https://github.com/urstrulykkr/product_review-system/workflows/Python/badge.svg) ![Node CI](https://github.com/urstrulykkr/product_review-system/workflows/Node%20CI/badge.svg)
+# product_review-system [![Lint with flake8](https://github.com/urstrulykkr/product_review-system/actions/workflows/flake8.yml/badge.svg)](https://github.com/urstrulykkr/product_review-system/actions/workflows/flake8.yml) [![Node.js CI](https://github.com/urstrulykkr/product_review-system/actions/workflows/nodejs.yml/badge.svg)](https://github.com/urstrulykkr/product_review-system/actions/workflows/nodejs.yml) [![Python CI](https://github.com/urstrulykkr/product_review-system/actions/workflows/python.yml/badge.svg)](https://github.com/urstrulykkr/product_review-system/actions/workflows/python.yml)
 
 A Machine learning powered product review system.
 
