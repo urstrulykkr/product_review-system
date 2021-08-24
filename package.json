@@ -15,7 +15,8 @@
 	"homepage": "https://github.com/urstrulykkr/product_review-system#readme",
 	"scripts": {
 		"lint": "eslint index.js",
-		"start": "node index.js"
+		"start": "node index.js",
+		"test": "mocha"
 	},
 	"dependencies": {
 		"ejs": "^3.1.6",
@@ -23,8 +24,11 @@
 		"morgan": "^1.10.0"
 	},
 	"devDependencies": {
+		"chai": "^4.3.4",
+		"chai-http": "^4.3.0",
 		"eslint": "^7.32.0",
-		"eslint-config-google": "^0.14.0"
+		"eslint-config-google": "^0.14.0",
+		"mocha": "^9.1.0"
 	},
 	"private": true,
 	"engines": {
@@ -32,8 +36,8 @@
 		"npm": ">=7.21.0"
 	},
 	"os": [
-    "darwin",
-    "linux",
-	"!win32"
-  ]
+		"darwin",
+		"linux",
+		"!win32"
+	]
 }
